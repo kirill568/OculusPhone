@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'DS Greece'; /* Имя шрифта */
+    src: url('../fonts/ofont_ru_DS_Greece.ttf'); /* Путь к файлу со шрифтом */
+}
+
+.team {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'DS Greece';
+	text-align: center;
+	max-width: 60%;
+	min-height: 100vh;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	padding-top: 30px;
+}
+
+.team h2 {
+	margin-bottom: 25px;
+}
+
+.teamMate {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 45px 0;
+}
+
+.border {
+	width: 80px;
+	margin: 0 auto;
+	border-bottom: 3px solid grey;
+	border-height: 20px;
+}
+
+.description h3 {
+	margin-bottom: 15px;
+}
+
+.description {
+	font-family: 'DS Greece', cursive;
+	font-size: 20px;
+	max-width: 40%;
+	text-align: justify;
+	line-height: 30px;
+	padding: 10px;
+	border: 5px solid #82cf9f;
+	border-radius: 5px;
+}
+
+.teamMate:nth-child(4n) h3 {
+	text-align: right;
+}
+
+.co {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.logoCompany img {
+	transform: scale(-1, 1);
+	width: 250px;
+	height: 250px;
+}
+
+.company {
+	font-family: 'DS Greece', cursive;
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+.descriptionCompany {
+	text-align: justify;
+	line-height: 30px;
+	padding: 10px;
+	border: 5px solid #82cf9f;
+	border-radius: 5px;
+	margin-top: 50px;
+}

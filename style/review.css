@@ -1,0 +1,323 @@
+
+body {
+	position: relative;
+	padding: 0;
+}
+
+section {
+	padding-top: 80px;
+}
+
+.menu {
+	display: flex;
+	position: fixed;
+	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 70px;
+  	font-size: 18px;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 70px;
+	background-color: #44b76f;
+	z-index: 1000;
+	box-sizing: border-box;
+}
+
+.menu a {
+	margin-right: 50px;
+	height: 25px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu a:nth-child(1) img {
+	transform: scale(-1, 1);
+	width: 50px;
+	height: 50px;
+}
+
+.menu a:nth-child(1) {
+	width: 50px;
+	height: 50px;
+}
+
+.menu a:nth-child(1):hover {
+	border: none;
+}
+
+input[type="submit"] {
+	background: none;
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+input[type="text"] {
+	font-size: 17px;
+	width: 160px;
+}
+
+.userPosition {
+	border-bottom: 2px solid white;
+}
+
+.menu a:hover {
+	border-bottom: 2px solid white;
+}
+
+.phoneContainer {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.galery {
+	width: 360px;
+	text-align: center;
+}
+
+.galery h2 {
+	margin-bottom: 15px;
+}
+
+.galery img {
+	max-width: 250px;
+	height: 490px;
+}
+
+.phone {
+	display: none;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	margin-top: 50px;
+}
+
+.showPhone {
+	display: flex;
+}
+
+.navigation {
+	margin-top: 30px;
+}
+
+.dots {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.selectedDots {
+	background-color: grey;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: inline-block;
+}
+
+.specifications table {
+	border-collapse: collapse;
+}
+
+.specifications table td {
+	padding: 20px;
+}
+
+.specifications caption {
+	margin-bottom: 25px;
+	font-size: 25px;
+}
+
+.specifications table tr:nth-child(2n-1) {
+	background-color: #e5e5e5;
+}
+
+.showMore {
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+	border: none;
+	background-color: #44b76f;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.showMore:hover {
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+.review {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 1024px;
+	height: 768px;
+	background-color: white;
+	border-radius: 10px;
+	z-index: 888;
+	overflow: scroll;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.bgLayer {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(209, 209, 209, 0.9);
+	z-index: 886;
+}
+
+.showLayer {
+	display: block;
+}
+
+.showReview {
+	display: block;
+}
+
+.close {
+	display: inline-block;
+	margin-left: 93%;
+	margin-top: 10px;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+
+.close::before {
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 6px;
+	border-radius: 3px;
+	background-color: #76db9c;
+	transform: rotate(45deg);
+}
+
+.close::after {
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 6px;
+	border-radius: 3px;
+	background-color: #76db9c;
+	transform: rotate(-45deg);
+}
+
+.containerNameSpec {
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 50px;
+}
+
+.nameSpec {
+	display: inline-block;
+	height: 20px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.nameSpec:hover {
+	border-bottom: 2px solid #76db9c;
+}
+
+.moreSpec {
+	margin: 0 auto;
+	width: 800px;
+	height: 700px;
+	margin-top: 25px;
+	border-collapse: collapse;
+	font-size: 18px;
+}
+
+.moreSpec td {
+	padding: 15px;
+	width: 50%;
+}
+
+.moreSpec td:nth-child(2n-1) {
+	text-align: left;
+}
+
+.moreSpec td:nth-child(2n) {
+
+}
+
+.moreSpec tr:nth-child(2n-1) {
+	background-color: #e5e5e5;
+}
+
+.video {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.pages {
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.prePage, .nextPage {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	color: #44b76f;
+	font-size: 18px;
+}
+
+.pages a::before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: -60px;
+	width: 50px;
+	height: 2px;
+	background-color: #44b76f;
+}
+
+.pages a::after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: -59px;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #44b76f;
+	border-right: none;
+	border-bottom: none;
+	transform: rotate(-45deg);
+}
+
+.nextPage:nth-child(2)::before {
+	left: 175px;
+}
+
+.nextPage:nth-child(2)::after {
+	transform: rotate(135deg);
+	left: 207px;
+}
+
+.lastPage {
+	color: grey;
+}
+
